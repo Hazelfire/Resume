@@ -5,7 +5,8 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
-\documentclass[11pt,a4paper,lmodern]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
@@ -24,12 +25,12 @@
 
 % personal data
 \name{Sam}{Nolan}
-\title{C++ Developer}                               % optional, remove / comment the line if not wanted
+\title{Student Cloud Engineer}                               % optional, remove / comment the line if not wanted
 \address{33 Great Ocean Road}{Jan Juc, Victoria}{Australia}		   % optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+61~(474)~736~293}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\email{samnolan555@gmail.com}                               % optional, remove / comment the line if not wanted
-%\homepage{hazelfire.org}                           % optional, remove / comment the line if not wanted
-\social[github]{hazelfire}                              % optional, remove / comment the line if not wanted 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\email{sam@hazelfire.org}                               % optional, remove / comment the line if not wanted
+\social[linkedin]{Sam Nolan}
+\social[github]{Hazelfire}                              % optional, remove / comment the line if not wanted 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
 % bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
@@ -48,27 +49,54 @@
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-
 \section{Education}
-\cventry{2017}{VCE Software Development}{Belmont High School}{Belmont}{}{}  % arguments 3 to 6 can be left empty
-\cventry{2017}{VCE Algorithmics}{Distance Education Centre of Victoria}{}{}{}
-\subsection{Read Books}
-\cvdoubleitem{Code Complete}{}{Clean Code}{}
-\cvdoubleitem{Design Patterns}{}{Applying UML and Patterns}{}
+\cventry{2018--2020}{Bachelor of Computer Science}{RMIT}{Melbourne}{}{}
+\cventry{2017}{VCE Software Development}{Belmont High School}{Belmont}{45}{}  % arguments 3 to 6 can be left empty
+\cventry{2017}{VCE Algorithmics}{Distance Education Centre of Victoria}{}{44}{}
+\cventry{2017}{VCE Mathematical Methods}{Belmont High School}{Belmont}{48}{}
+\cventry{2017}{VCE Specialist Mathematics}{Belmont High School}{Belmont}{40}{}
+\cventry{2017}{VCE Physics}{Belmont High School}{Belmont}{40}{}
 
+\subsection{Books Read}
+\cvlistdoubleitem{Code Complete}{Clean Code}
+\cvlistdoubleitem{Applying UML and Patterns}{Design Patterns}
+\cvlistdoubleitem{Pro Git}{Refactoring}
 
 \section{Experience}
+\cventry{2018}{RMIT Programming Club}{Treasurer}{}{}{}
+\cventry{2018}{RMIT Entrepreneurship and Startup Association}{Event Officer}{}{}{Organising events and managing tasks within the organisation, introducing Scrum}
+\cventry{2018}{SSCC}{Student Representative}{}{}{}
+\cventry{2018}{Upstart Challenge}{Volunteer}{}{}{IT Support for registered charity who create entrepreneur opportunities for high school students.}
+\cventry{2017}{Australian Road Lines}{Web Developer}{}{}{Built a website for logistics company at australianroadlines.com.au.}
+\cventry{2017}{Hackathon}{Belmont High School}{Belmont}{}{Hackathon I organised where we created a website for the Student Representative Council.}
+\cventry{2017}{Hex Competition}{Belmont High School}{Belmont}{}{Javascript Hex bot competition I organised for the second year.}
+\cventry{2017}{Lao Thai Geelong Care}{IT Support Volunteer}{}{}{Host and maintain the website of a not-for-profit at laothaigc.com.au.}
 \cventry{2016}{Work Experience}{Target Headquarters}{Belmont}{}{Point of sale development department.\newline{}}%\
-
-\section{Languages}
-\cvitemwithcomment{C++}{Intermediate}{Specialize in threading, networking and performance}
-\cvitem{LaTex}{I write most documents in LaTeX}
-
-\section{Computer skills}
-\cvdoubleitem{Git}{}{C++ Tools}{CMake}
+\cventry{2016}{Hackathon}{Belmont High School}{Belmont}{}{Hackathon I organised where we created a sign in system for our school.}
+\cventry{2016}{Hex Competition}{Belmont High School}{Belmont}{}{Javascript Hex bot competition I organised for our school.}
 
 \section{Projects}
-    \cvitemwithcomment{HexDLC}{Machine Learning REST Server}{}
+\cvitem{Dot Collector}{Micro-feedback application for lecturers, trialed on 08/05/2018}
+\cvitem{Transfire}{An application which turns python objects into Microservices}
+\cvitem{Explain it like I'm 2}{In depth explanations of different computer science topics.}
+\cvitem{HexDLC}{A deep learning server that generates neuron networks to play the game Hex.}
+\cvitem{ProjectX}{An RPG that interprets Lua and XML to configure various parts of the game.}
+
+\section{Languages}
+\cvitem{Python}{Very proficient, main programming language for use in AWS Lambda}
+\cvitem{Java}{Learnt it in 2014, don't use it very often but have a deep understanding}
+\cvitem{Node.js}{Lambda functions, chat bots}
+\cvitem{C++}{Specialise in threading, networking, interpreters and performance}
+
+\section{Skills}
+\cvdoubleitem{Linux}{Administration, Vim}{Agile}{Scrum, UP}
+\cvitem{Git}{Github, branching, hooks}
+\cvitem{AWS}{Serverless, Lambda, API Gateway, Hosting etc}
+
+\section{Referees}
+\cvitem{Peter Colla}{Lead Developer of Target POS Department \textit{+61 (417) 344 343}}
+\cvitem{Callum Finley}{Head Technician of Belmont High School \textit{+61 (400) 535 399}}
+
 
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
@@ -83,25 +111,6 @@
 %\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
 
 \clearpage
-%-----       letter       ---------------------------------------------------------
-% recipient data
-\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
-\opening{Dear Sir or Madam,}
-\closing{Yours faithfully,}
-\enclosure[Attached]{curriculum vitae}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-\makelettertitle
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
-
-Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
-
-Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
-
-Albert Einstein discovered that $e=mc^2$ in 1905.
-
-\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
-
-\makeletterclosing
 
 %\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
