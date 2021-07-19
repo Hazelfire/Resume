@@ -15,6 +15,9 @@ stdenv.mkDerivation {
         # build tools
         moderncv
         fontawesome
+        multirow
+        arydshln
+        latexmk
         ;
     })
 
