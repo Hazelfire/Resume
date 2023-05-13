@@ -25,8 +25,8 @@
 
 % personal data
 \name{Sam}{Nolan}
-\title{Student Software Developer}                               % optional, remove / comment the line if not wanted
-\address{33 Great Ocean Road}{Jan Juc, Victoria}{Australia}		   % optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\title{Software Developer / Researcher}                               % optional, remove / comment the line if not wanted
+\address{18a Gidding St}{North Geelong, Victoria}{Australia}		   % optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+61~(474)~736~293}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 \email{samnolan555@gmail.com}                               % optional, remove / comment the line if not wanted
 \social[linkedin]{Sam Nolan}
@@ -50,51 +50,54 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 \section{Education}
+\cventry{2023}{MicroMasters Data, Economics and Development Policy}{MITx}{Online (audited)}{}{}
 \cventry{2018--2021}{Bachelor of Computer Science (Dean's Scholar, Honours)}{RMIT}{Melbourne}{}{}
 \cventry{2017}{VCE}{Belmont High School}{Belmont}{ATAR of 98.85}{}  % arguments 3 to 6 can be left empty
 
 \section{Experience}
+\cventry{2022-2023}{Quantified Uncertainty Research Institute (QURI)}{Software developer/Researcher}{}{}{Developing Squiggle, an estimation language that treats probability distributions as first class citizens.
+I did mostly frontend development on the language to add features required to do my independent research. I considered myself mainly a user of Squiggle that would develop when neccesary.}
+\cventry{2022}{Independent}{Researcher}{}{}{Conducted several projects into the construction of high quality CEAs. Such as:
+\begin{enumerate}
+  \item Running a Dimensional Analysis on GiveWell's GiveDirectly CEA, identifying two implicit assumptions made.
+  \item Developing a computer language called Pedant, that ran a dimensional analysis on CEAs to identify implicit assumptions.
+  \item Led a research effort to quantify uncertainty in all GiveWell CEAs, as a submission to the GiveWell change our mind contest.
+\end{enumerate}
+All my research is on the Effective Altruism Forum under the name \textit{Hazelfire}}
+  \cventry{2022-2023}{Effective Altruism Melbourne}{Secretary, President}{}{}{}
 \cventry{2020-2021}{RMIT Programming Club}{President}{}{}{}
-\cventry{2020}{RMIT CSIT Society}{Treasurer}{}{}{}
-\cventry{2019}{RMIT Programming Club}{Vice President}{}{}{}
-\cventry{2019}{RMIT}{Programming Techniques Tutor}{}{}{}
-\cventry{2018}{Boojum}{React, wordpress and django developer}{}{}{}
-\cventry{2018}{RMIT Programming Club}{Treasurer}{}{}{}
-\cventry{2018}{RMIT Entrepreneurship and Startup Association}{Event Officer, Treasurer}{}{}{Organising events and managing tasks within the organisation.}
+%\cventry{2020}{RMIT CSIT Society}{Treasurer}{}{}{}
+%\cventry{2019}{RMIT Programming Club}{Vice President}{}{}{}
+%\cventry{2019}{RMIT}{Programming Techniques Tutor}{}{}{}
+%\cventry{2018}{Boojum}{React, wordpress and django developer}{}{}{}
+%\cventry{2018}{RMIT Programming Club}{Treasurer}{}{}{}
+%\cventry{2018}{RMIT Entrepreneurship and Startup Association}{Event Officer, Treasurer}{}{}{Organising events and managing tasks within the organisation.}
 %\cventry{2018}{SSCC}{Student Representative}{}{}{}
-\cventry{2018}{Upstart Challenge}{Volunteer}{}{}{IT Support for registered charity who create entrepreneur opportunities for high school students.}
+%\cventry{2018}{Upstart Challenge}{Volunteer}{}{}{IT Support for registered charity who create entrepreneur opportunities for high school students.}
 %\cventry{2017}{Australian Road Lines}{Web Developer}{}{}{Built a website for logistics company at australianroadlines.com.au.}
 %\cventry{2017}{Hackathon}{Belmont High School}{Belmont}{}{Hackathon I organised where we created a website for the Student Representative Council.}
 %\cventry{2017}{Hex Competition}{Belmont High School}{Belmont}{}{Javascript Hex bot competition I organised for the second year.}
 %\cventry{2017}{Lao Thai Geelong Care}{IT Support Volunteer}{}{}{Host and maintain the website of a not-for-profit at laothaigc.com.au.}
-\cventry{2016}{Work Experience}{Target Headquarters}{Belmont}{}{Point of sale development department.\newline{}}%\
+%\cventry{2016}{Work Experience}{Target Headquarters}{Belmont}{}{Point of sale development department.\newline{}}%\
 %\cventry{2016}{Hackathon}{Belmont High School}{Belmont}{}{Hackathon I organised where we created a sign in system for our school.}
 %\cventry{2016}{Hex Competition}{Belmont High School}{Belmont}{}{Javascript Hex bot competition I organised for our school.}
 
 \section{Projects}
-\cvitem{May}{An time based organiser I wrote for managing a large amount of obligations}
-\cvitem{Dot Collector}{Micro-feedback application for lecturers, trialed on 08/05/2018}
-\cvitem{Explain it like I'm 2}{In depth explanations of different computer science topics.}
-\cvitem{HexDLC}{A deep learning server that generates neuron networks to play the game Hex.}
-\cvitem{ProjectX}{An RPG that interprets Lua and XML to configure various parts of the game.}
+\cvitem{Squiggle}{Typescript. An estimation language that treats probability distributions as first class citizens. Made for the purpose of helping decision making around uncertainty, particularly in longtermist funding.}
+\cvitem{Pedant}{Haskell. A language to statically check for assumptions in Cost-Effectiveness Analyses}
+\cvitem{Uncertainty in GiveWell CEAs}{Squiggle. A created a collection of uncertainty estimates of GiveWell top charities}
+\cvitem{May}{Haskell / Elm. An time based organiser I wrote for managing a large amount of obligations}
+%\cvitem{Dot Collector}{Micro-feedback application for lecturers, trialed on 08/05/2018}
+%\cvitem{Explain it like I'm 2}{In depth explanations of different computer science topics.}
+%\cvitem{HexDLC}{A deep learning server that generates neuron networks to play the game Hex.}
+%\cvitem{ProjectX}{An RPG that interprets Lua and XML to configure various parts of the game.}
 
 \section{Languages}
-\cvitem{Haskell}{Very proficient, used for a variety of command line tools}
+\cvitem{Haskell}{Very proficient, particularly in backends to do with GraphQL}
+\cvitem{Javascript / Typescript}{Very proficient, used in building Squiggle, a React/ts probability library I maintained}
 \cvitem{Python}{Very proficient, main programming language for use in AWS Lambda}
-\cvitem{Javascript}{React, React Router, Redux}
-\cvitem{Java}{Learnt it in 2014, don't use it very often but have a deep understanding}
 \cvitem{Node.js}{Lambda functions, chat bots}
 \cvitem{C++}{Specialise in threading, networking, interpreters and performance}
-
-\section{Skills}
-\cvdoubleitem{Linux}{Administration, Vim}{Agile}{Scrum, UP}
-\cvitem{Git}{Github, branching, hooks}
-\cvitem{AWS}{DevOps, Serverless, Lambda, API Gateway, Hosting etc}
-
-\section{Referees}
-\cvitem{Peter Colla}{Lead Developer of Target POS Department \textit{+61 (417) 344 343}}
-\cvitem{Callum Finley}{Head Technician of Belmont High School \textit{+61 (400) 535 399}}
-
 
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
